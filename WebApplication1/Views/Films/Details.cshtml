@@ -1,0 +1,60 @@
+﻿@model WebApplication1.Models.Film
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Film</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.FilmAdi)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.FilmAdi)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Sure)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Sure)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Ozet)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Ozet)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Altyazili)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Altyazili)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Afis)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Afis)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Yonetmen)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Yonetmen.YonetmenAdi)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Kategori)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Kategori.KategoriAdi)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.FilmID">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
